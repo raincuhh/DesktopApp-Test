@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>test</h1>
+    <br />
+    <button id="button1">click me</button>
+    <br />
+    <h1 id="text1">placeholder</h1>
+
+    <script>
+      var buttonText = document.getElementById("button1");
+      var textPlaceholder = document.getElementById("text1");
+      var textIsChanged = 1;
+
+      buttonText.addEventListener("click", function () {
+        textPlaceholder.innerHTML = "changedText";
+      });
+    </script>
+  </body>
+</html>
